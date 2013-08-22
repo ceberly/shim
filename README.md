@@ -31,6 +31,6 @@ Print debugging information:
 go run /src/shim.go -v -h "http://example.com"
 ```
 
-NOTE: shim rewrites the Host header of your local request to match the host of the destination URL. Please check with your API's terms of service before using this program.
+NOTE: shim rewrites the Host header of your local request to match the host of the destination URL. Don't use shim if this violates the terms of the API you are trying to use.
 
 
