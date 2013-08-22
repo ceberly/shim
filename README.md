@@ -5,7 +5,7 @@ shim is a super simple http proxy.
 
 It is most useful for interacting with third party APIs that do not expose JSONP or the appropriate origin controls.
 
-Examples.
+Examples
 
 ```
 > go run src/shim.go -h "http://api.flickr.com/" &
@@ -30,5 +30,7 @@ Print debugging information:
 ```
 go run /src/shim.go -v -h "http://example.com"
 ```
+
+NOTE: shim rewrites the Host header of your local request to match the host of the destination URL. Please check with your API's terms of service before using this program.
 
 
